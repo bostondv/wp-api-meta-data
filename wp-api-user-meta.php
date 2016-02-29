@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name:  WP-API User Meta
+Plugin Name:  WP REST API User Meta
 Plugin URI:   https://github.com/bostondv/wp-api-user-meta
 Description:  Adds user meta data to WP-API user endpoints
 Version:      1.0.0

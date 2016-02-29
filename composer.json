@@ -1,6 +1,6 @@
 {
 	"name" : "bostondv/wp-api-user-meta",
-	"description" : "Adds user meta data to WP-API user endpoints",
+	"description" : "Adds user meta data to WP REST API user endpoints.",
 	"type" : "wordpress-plugin",
   "license": "MIT",
   "homepage": "https://github.com/bostondv/wp-api-user-meta",
