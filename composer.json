@@ -1,0 +1,25 @@
+{
+	"name" : "bostondv/wp-api-user-meta",
+	"description" : "Adds user meta data to WP-API user endpoints",
+	"type" : "wordpress-plugin",
+  "license": "MIT",
+  "homepage": "https://github.com/bostondv/wp-api-user-meta",
+  "authors": [
+   {
+     "name": "Boston Dell-Vandenberg",
+     "email": "boston@pomelodesign.com",
+     "homepage": "https://pomelodesign.com"
+   }
+  ],
+  "keywords": [
+    "wordpress",
+    "wp-api"
+  ],
+  "support": {
+    "issues": "https://github.com/bostondv/wp-api-user-meta/issues"
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "composer/installers": "~1.0"
+  }
+}
