@@ -1,9 +1,9 @@
 {
-	"name" : "bostondv/wp-api-user-meta",
-	"description" : "Adds user meta data to WP REST API user endpoints.",
+	"name" : "bostondv/wp-api-meta-data",
+	"description" : "Adds post and user meta data to WP REST API endpoints.",
 	"type" : "wordpress-plugin",
   "license": "MIT",
-  "homepage": "https://github.com/bostondv/wp-api-user-meta",
+  "homepage": "https://github.com/bostondv/wp-api-meta-data",
   "authors": [
    {
      "name": "Boston Dell-Vandenberg",
@@ -16,7 +16,7 @@
     "wp-api"
   ],
   "support": {
-    "issues": "https://github.com/bostondv/wp-api-user-meta/issues"
+    "issues": "https://github.com/bostondv/wp-api-meta-data/issues"
   },
   "require": {
     "php": ">=5.4.0",
