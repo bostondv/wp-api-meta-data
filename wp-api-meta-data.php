@@ -3,7 +3,7 @@
 Plugin Name:  WP REST API Post and User Meta
 Plugin URI:   https://github.com/bostondv/wp-api-meta-data
 Description:  Adds post and user meta data to WP REST API endpoints
-Version:      1.1.0
+Version:      1.1.1
 Author:       Boston Dell-Vandenberg
 Author URI:   https://pomelodesign.com
 License:      MIT License
@@ -47,7 +47,7 @@ function set_post_meta( $value, $object, $field_name ) {
   if ( ! $value || ! is_array( $value ) ) {
     return;
   }
-  foreach ($value as $k => $v) {
+  foreach ( $value as $k => $v ) {
     if ( $v === null ) {
       \delete_post_meta( $object->ID, $k, strip_tags( $v ) );
     } else {
@@ -92,10 +92,12 @@ function set_user_meta( $value, $object, $field_name ) {
   if ( ! $value || ! is_array( $value ) ) {
     return;
   }
-  if ( $v === null ) {
-    \delete_user_meta( $object->ID, $k, strip_tags( $v ) );
-  } else {
-    \update_user_meta( $object->ID, $k, strip_tags( $v ) );
+  foreach ( $value as $k => $v ) {
+    if ( $v === null ) {
+      \delete_user_meta( $object->ID, $k, strip_tags( $v ) );
+    } else {
+      \update_user_meta( $object->ID, $k, strip_tags( $v ) );
+    }
   }
 }
 
